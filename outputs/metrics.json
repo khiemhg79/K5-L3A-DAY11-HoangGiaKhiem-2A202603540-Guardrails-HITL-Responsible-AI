@@ -1,0 +1,29 @@
+{
+  "total_requests": 37,
+  "blocked_requests": 21,
+  "block_rate": 0.5675675675675675,
+  "rate_limit_hits": 5,
+  "judge_checks": 0,
+  "judge_fails": 0,
+  "judge_fail_rate": 0.0,
+  "alerts": [
+    {
+      "metric": "block_rate",
+      "value": 0.5676,
+      "threshold": 0.5,
+      "message": "Block rate 57% > 50% — possible attack campaign."
+    }
+  ],
+  "blocked_by_layer": {
+    "input_injection": 11,
+    "input_topic": 3,
+    "rate_limiter": 5,
+    "input_empty": 1,
+    "input_length": 1
+  },
+  "thresholds": {
+    "block_rate": 0.5,
+    "rate_limit_hits": 5,
+    "judge_fail_rate": 0.3
+  }
+}

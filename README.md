@@ -1,3 +1,25 @@
+# Bài nộp — Day 11 Guardrails / HITL / Responsible AI
+ 
+| | |
+|---|---|
+| **Họ tên** | Hoàng Gia Khiêm |
+| **MSSV** | 2A202603540 |
+| **Lớp** | K5 · L3A |
+| **Blue** | OpenRouter `liquid/lfm-3-1.7b:free` |
+| **Red / Red Advance** | OpenAI `gpt-4o-mini` |
+ 
+### Cách chạy ngắn
+ 
+```bash
+python -m venv .venv && .\.venv\Scripts\Activate.ps1   # macOS/Linux: source .venv/bin/activate
+pip install -r requirements.txt
+cp .env.example .env    # điền OPENROUTER_API_KEY, RED_TEAM_PROVIDER=openai, OPENAI_API_KEY
+ 
+python src/main.py --part 2   # CP2 — guardrails (in terminal)
+python src/main.py --part 3   # CP3 — outputs/results.json, audit_log.json, metrics.json
+python src/main.py --part 4   # CP4 — outputs/attack_results.json (+ unsafe/guards)
+python scripts/grade.py --submission-dir . --out outputs/grade_report.json
+```
 # Day 11 — Controlled Agent Security (2026)
 
 > 👤 **Hình thức:** bài tập **cá nhân** (1 người / 1 MSSV).  
